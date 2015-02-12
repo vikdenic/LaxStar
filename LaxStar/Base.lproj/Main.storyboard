@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,6 +20,44 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bg9-1e-xVY">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfD-dP-znQ" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CfD-dP-znQ" firstAttribute="top" secondItem="bg9-1e-xVY" secondAttribute="top" id="MaE-iq-kdD"/>
+                                    <constraint firstAttribute="trailing" secondItem="CfD-dP-znQ" secondAttribute="trailing" id="kMu-hW-aVu"/>
+                                    <constraint firstItem="CfD-dP-znQ" firstAttribute="leading" secondItem="bg9-1e-xVY" secondAttribute="leading" id="lkl-5v-ARe"/>
+                                    <constraint firstAttribute="bottom" secondItem="CfD-dP-znQ" secondAttribute="bottom" id="pWx-Ox-EfY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="CfD-dP-znQ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="MaE-iq-kdD"/>
+                                        <exclude reference="kMu-hW-aVu"/>
+                                        <exclude reference="lkl-5v-ARe"/>
+                                        <exclude reference="pWx-Ox-EfY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                    <mask key="subviews">
+                                        <include reference="CfD-dP-znQ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="MaE-iq-kdD"/>
+                                        <include reference="kMu-hW-aVu"/>
+                                        <include reference="lkl-5v-ARe"/>
+                                        <include reference="pWx-Ox-EfY"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -33,10 +72,10 @@
                                 <exclude reference="bg9-1e-xVY"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="P9c-FP-HoM"/>
                                 <exclude reference="KDt-gt-Z1J"/>
                                 <exclude reference="Ydb-R6-UBq"/>
                                 <exclude reference="l19-0B-Lm7"/>
-                                <exclude reference="P9c-FP-HoM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -44,10 +83,10 @@
                                 <include reference="bg9-1e-xVY"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="P9c-FP-HoM"/>
                                 <include reference="KDt-gt-Z1J"/>
                                 <include reference="Ydb-R6-UBq"/>
                                 <include reference="l19-0B-Lm7"/>
-                                <include reference="P9c-FP-HoM"/>
                             </mask>
                         </variation>
                     </view>
