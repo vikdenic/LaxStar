@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		938DDD3E1A8D0D5500260D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDD3D1A8D0D5500260D90 /* AppDelegate.swift */; };
-		938DDD401A8D0D5500260D90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDD3F1A8D0D5500260D90 /* ViewController.swift */; };
 		938DDD431A8D0D5500260D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938DDD411A8D0D5500260D90 /* Main.storyboard */; };
 		938DDD451A8D0D5500260D90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938DDD441A8D0D5500260D90 /* Images.xcassets */; };
 		938DDD481A8D0D5500260D90 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938DDD461A8D0D5500260D90 /* LaunchScreen.xib */; };
 		938DDD541A8D0D5500260D90 /* LaxStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDD531A8D0D5500260D90 /* LaxStarTests.swift */; };
+		938DDD5E1A8D0DE200260D90 /* LaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDD5D1A8D0DE200260D90 /* LaxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		938DDD381A8D0D5500260D90 /* LaxStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaxStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938DDD3C1A8D0D5500260D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938DDD3D1A8D0D5500260D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		938DDD3F1A8D0D5500260D90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		938DDD421A8D0D5500260D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		938DDD441A8D0D5500260D90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		938DDD471A8D0D5500260D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		938DDD4D1A8D0D5500260D90 /* LaxStarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaxStarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938DDD521A8D0D5500260D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938DDD531A8D0D5500260D90 /* LaxStarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaxStarTests.swift; sourceTree = "<group>"; };
+		938DDD5D1A8D0DE200260D90 /* LaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaxViewController.swift; path = ../LaxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				938DDD3D1A8D0D5500260D90 /* AppDelegate.swift */,
-				938DDD3F1A8D0D5500260D90 /* ViewController.swift */,
+				938DDD5D1A8D0DE200260D90 /* LaxViewController.swift */,
 				938DDD411A8D0D5500260D90 /* Main.storyboard */,
 				938DDD441A8D0D5500260D90 /* Images.xcassets */,
 				938DDD461A8D0D5500260D90 /* LaunchScreen.xib */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938DDD401A8D0D5500260D90 /* ViewController.swift in Sources */,
+				938DDD5E1A8D0DE200260D90 /* LaxViewController.swift in Sources */,
 				938DDD3E1A8D0D5500260D90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
