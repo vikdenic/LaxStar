@@ -10,8 +10,7 @@ import UIKit
 
 class LaxViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet var imageViewBottomConstraint: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +27,8 @@ class LaxViewController: UIViewController, UITableViewDataSource, UITableViewDel
         return 10
     }
 
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
-    {
-        let headerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 180))
-        headerView.backgroundColor = UIColor.clearColor()
-        return headerView
-    }
+    //UIScrollView
+    func scrollViewDidScroll(scrollView: UIScrollView) {
 
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
-    {
-        return 180
     }
 }
