@@ -12,7 +12,8 @@
 		938DDD451A8D0D5500260D90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938DDD441A8D0D5500260D90 /* Images.xcassets */; };
 		938DDD481A8D0D5500260D90 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938DDD461A8D0D5500260D90 /* LaunchScreen.xib */; };
 		938DDD541A8D0D5500260D90 /* LaxStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDD531A8D0D5500260D90 /* LaxStarTests.swift */; };
-		938DDD5E1A8D0DE200260D90 /* LaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDD5D1A8D0DE200260D90 /* LaxViewController.swift */; };
+		93B879931A8D859E00BF0906 /* LaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B879921A8D859E00BF0906 /* LaxViewController.swift */; };
+		93B879951A8D8FDF00BF0906 /* NewsItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B879941A8D8FDF00BF0906 /* NewsItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,8 @@
 		938DDD4D1A8D0D5500260D90 /* LaxStarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaxStarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938DDD521A8D0D5500260D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938DDD531A8D0D5500260D90 /* LaxStarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaxStarTests.swift; sourceTree = "<group>"; };
-		938DDD5D1A8D0DE200260D90 /* LaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaxViewController.swift; path = ../LaxViewController.swift; sourceTree = "<group>"; };
+		93B879921A8D859E00BF0906 /* LaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaxViewController.swift; sourceTree = "<group>"; };
+		93B879941A8D8FDF00BF0906 /* NewsItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				938DDD3D1A8D0D5500260D90 /* AppDelegate.swift */,
-				938DDD5D1A8D0DE200260D90 /* LaxViewController.swift */,
+				93B879921A8D859E00BF0906 /* LaxViewController.swift */,
+				93B879941A8D8FDF00BF0906 /* NewsItemTableViewCell.swift */,
 				938DDD411A8D0D5500260D90 /* Main.storyboard */,
 				938DDD441A8D0D5500260D90 /* Images.xcassets */,
 				938DDD461A8D0D5500260D90 /* LaunchScreen.xib */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938DDD5E1A8D0DE200260D90 /* LaxViewController.swift in Sources */,
+				93B879931A8D859E00BF0906 /* LaxViewController.swift in Sources */,
+				93B879951A8D8FDF00BF0906 /* NewsItemTableViewCell.swift in Sources */,
 				938DDD3E1A8D0D5500260D90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				938DDD591A8D0D5500260D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		938DDD5A1A8D0D5500260D90 /* Build configuration list for PBXNativeTarget "LaxStarTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				938DDD5C1A8D0D5500260D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
