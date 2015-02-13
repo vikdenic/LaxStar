@@ -10,8 +10,10 @@ import UIKit
 
 class LaxViewController: UITableViewController, UIScrollViewDelegate {
 
-    let kTableHeaderHeight: CGFloat = 300.0
+    let kTableHeaderHeight: CGFloat = 180.0
     var headerView: UIView!
+
+    @IBOutlet var laxImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +21,14 @@ class LaxViewController: UITableViewController, UIScrollViewDelegate {
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
 
-
+        //take control of headerview
         headerView = tableView.tableHeaderView
         tableView.tableHeaderView = nil
         tableView.addSubview(headerView)
 
         tableView.contentInset = UIEdgeInsets(top: kTableHeaderHeight, left: 0, bottom: 0, right: 0)
         tableView.contentOffset = CGPoint(x: 0, y: -kTableHeaderHeight)
+
         updateHeaderView()
     }
 
@@ -41,7 +44,12 @@ class LaxViewController: UITableViewController, UIScrollViewDelegate {
     func updateHeaderView() {
         var headerRect = CGRect(x: 0, y: -kTableHeaderHeight, width: tableView.bounds.width, height: kTableHeaderHeight)
 
-        if tableView.contentOffset.y < -kTableHeaderHeight {
+        if tableView.contentOffset.y <= -kTableHeaderHeight {
+            headerRect.origin.y = tableView.contentOffset.y
+            headerRect.size.height = -tableView.contentOffset.y
+        }
+        else
+        {
             headerRect.origin.y = tableView.contentOffset.y
             headerRect.size.height = -tableView.contentOffset.y
         }
