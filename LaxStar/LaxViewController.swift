@@ -10,10 +10,10 @@ import UIKit
 
 class LaxViewController: UITableViewController, UIScrollViewDelegate {
 
-    let kTableHeaderHeight: CGFloat = 180.0
-    var headerView: UIView!
-
     @IBOutlet var laxImageView: UIImageView!
+
+    var headerView: UIView!
+    let kTableHeaderHeight: CGFloat = 180.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
